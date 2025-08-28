@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>FrontPage Express 2.0</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<p><font size="5"><strong>FrontPage Express 2.0</strong></font>　　2025/8/27作成</p>
+
+<p>　</p>
+
+<p>私のサイトのような外見にこだわらない単純なページを書くのに今のhtmlエディターは面倒過ぎる。HTML
+3.2までしかサポートしていない FrontPage Express 2.0
+で充分なので、今でもそれ使っている。<br>
+<br>
+サポート切れのソフトを使うと脆弱性がなんたらかんたらと言い出す方がいるが、そんな古いソフトを狙う人はおらず、世間で対策が普及している中でセキュリティー問題が起こるとは思えず、気にしてしない。<br>
+<br>
+文字コードはUTF8が使えないのでjisを使っているが、文字列の漢字INコードと漢字OUTコードがモダンブラウザーで文字化けすることがある。ヘッダー中の
+&quot;Content-Type&quot; を &quot;content-type&quot; と手で書き換えるとなぜか直ったりする。<br>
+<br>
+<a href="https://www.eonet.ne.jp/~ninufuabushi/pc/urawaza.htm" target="_blank">Windows 2000 にFrontPage Express
+をインストールする</a><br>
+<br>
+というページがあるが、同じ方法でWindows 11にもインストールできる。ただしアンインストーラーは作成されないから必要になった時には
+&quot;fpxsetup.vbs&quot; や &quot;fpxpress.inf&quot; を読み解いて手動でアンインストールを行う必要がある。<br>
+<br>
+そこに書かれている FPESETUP.CAB に入っているファイルは<a href="files.txt" target="_blank">この通り</a>。<br>
+<br>
+インストール後のフォルダー構成は<a href="folders.txt" target="_blank">この通り</a>。&quot;msencode.dll&quot;
+だけはWindows 7よりも前のPCの C:\WINDOWS\SYSTEM32
+からコピーをして bin フォルダに入れる必要がある。はインストールはせずもこのフォルダ構造のままポータブルプログラムとして使っている。インストールしていないため、<br>
+・起動時にレジストリーに書き込めないというエラーが出る（書き込みしないで欲しいからそれでよし）。<br>
+・メニューからヘルプファイルを選んでも開かない（ファイル自体は存在しているので参照可）。<br>
+・いくつかテンプレートが開かない（普通は使わないでしょう）。<br>
+<br>
+現実的には &quot;FPESETUP.CAB&quot; を入手するのはもう難しいと思うが、古いPCに
+FrontPage Express 2.0 がインストールされていれば、そのインストールフォルダをコピーして来て上記のような制限付きのポータブルプログラムとして使えるのではないかな。　</p>
+
+<p>　</p>
+
+<p><a href="../">＜戻る＞</a></p>
+</body>
+</html>
