@@ -2,7 +2,7 @@
 
 <head>
 <meta http-equiv="Content-Type"
-content="text/html; charset=iso-2022-jp">
+content="text/html; charset=utf-8">
 <meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
 <title>Seizi</title>
 </head>
@@ -10,57 +10,57 @@ content="text/html; charset=iso-2022-jp">
 <body bgcolor="#FFFFFF">
 
 <p><font size="4"><strong>&lt; Seizi.exe &gt;<br>
-$B%F%-%9%H%U%!%$%kCf$N4A;z!J?7;z!K$r@5;z!J5l;z!K$KJQ49$7$^$9!J(JMS-DOS$B%W%m%s%W%HMQ%U%#%k%?!K(J<br>
+テキストファイル中の漢字（新字）を正字（旧字）に変換します（MS-DOSプロンプト用フィルタ）<br>
 </strong></font><br>
 <br>
-$B:n@.F|(J: 1999$BG/(J9$B7n(J19$BF|(J<br>
+作成日: 1999年9月19日<br>
 <br>
-$B:n@.<T(J: Yoshitan (<a href="mailto:yoshitan@imasy.or.jp">mailto:yoshitan@imasy.or.jp</a>)<br>
+作成者: Yoshitan (<a href="mailto:yoshitan@imasy.or.jp">mailto:yoshitan@imasy.or.jp</a>)<br>
 <br>
-$BF0:n4D6-(J: Windows 95/98 $BF|K\8lHG(J<br>
+動作環境: Windows 95/98 日本語版<br>
 <br>
-MS-DOS$B%W%m%s%W%H$GF0:n$9$k%U%#%k%?%W%m%0%i%`$G$9!#(JSeizi.exe
-$B$HF1$8%G%#%l%/%H%j$K(J $BJQ49I=%U%!%$%k(J Seizi.dat
-$B$rCV$$$F<B9T$7$^$9!#(J<br>
+MS-DOSプロンプトで動作するフィルタプログラムです。Seizi.exe
+と同じディレクトリに 変換表ファイル Seizi.dat
+を置いて実行します。<br>
 <br>
-$B?7;z$H@5;z$NJQ49I=$r%M%C%H%o!<%/>e$G>/$7C5$7$^$7$?$,8+Ev$?$j$^$;$s$G$7$?!#$=$3$G<+:n$r$7$F$7$^$$$^$7$?!#$=$N$?$aH4$1$,$"$k$+$b$7$l$^$;$s!#$1$7$+$i$sOC$G!"(JJIS$BCf$KBP1~$9$k@5;z$N$J$$$b$N$,7k9=$"$j$^$7$?!#0lNc!'(J&quot;$BNq(J&quot;&quot;$BNr(J&quot;$B$O(J&quot;$BLZ(J&quot;$B$,(J&quot;$B2S(J&quot;$B$H$J$C$F$$$k$N$,@5;z!#$^$?(JJIS$B$ONr;KE*$KB8:_$7$J$$>!<j$J<+BN$r:NMQ$7$F$$$k$b$N$,$"$j$^$9!#?92*30$N(J&quot;$B2*(J&quot;$B$NJP$O%7%9%F%`%U%)%s%H$G$O(J&quot;$B6h(J&quot;$B$K$J$C$F$$$^$9$,(J&quot;$BR?(J&quot;$B$H$9$Y$-!#$3$l$K$D$$$F$O%U%)%s%H$rJQ$($l$P2r7h$9$kLdBj$G$O$"$j$^$9!J$?$H$($P?7D,J88K$N(JCD-ROM$B$KIUB0$NBgF|K\0u:~@=!&=(1QB@L@D+$G$O@5$7$/I=<($5$l$k!K!#(J<br>
+新字と正字の変換表をネットワーク上で少し探しましたが見当たりませんでした。そこで自作をしてしまいました。そのため抜けがあるかもしれません。けしからん話で、JIS中に対応する正字のないものが結構ありました。一例：&quot;暦&quot;&quot;歴&quot;は&quot;木&quot;が&quot;禾&quot;となっているのが正字。またJISは歴史的に存在しない勝手な自体を採用しているものがあります。森鴎外の&quot;鴎&quot;の偏はシステムフォントでは&quot;区&quot;になっていますが&quot;區&quot;とすべき。これについてはフォントを変えれば解決する問題ではあります（たとえば新潮文庫のCD-ROMに付属の大日本印刷製・秀英太明朝では正しく表示される）。<br>
 <br>
-$BJ]<i<g5A<T$,;H$&!J$H$$$C$F$b@5!J5l!K$+$J$E$+$$$X$NJQ49$,$G$-$J$$$N$G$"$^$j0UL#$,$J$$!K$[$+$K!"<!$N$h$&$J$4$/8BDjE*$J<BMQL\E*$,$"$j$^$9!J<B$O$3$N$?$a$K$D$/$C$?!K!#(J<br>
+保守主義者が使う（といっても正（旧）かなづかいへの変換ができないのであまり意味がない）ほかに、次のようなごく限定的な実用目的があります（実はこのためにつくった）。<br>
 <br>
 <br>
---- $BF|K\8l$,FI$a$k4Z9q?M$K(JOutlook Express$B$GF|K\8l$N(JE$B%a!<%k$rAw$k(J
+--- 日本語が読める韓国人にOutlook Expressで日本語のEメールを送る
 ---<br>
 <br>
-$B4Z9q8l%3!<%I$K$O$"$j$,$?$$$3$H$K$R$i$,$J!&$+$?$+$J$,F~$C$F$$$^$9!#4A;z$bF~$C$F$$$^$9$,@5;zBN$G$9!#$=$3$GF|K\8l$GIaDL$KF~NO$r$7$?8e$K$3$N%U%#%k%?$r;H$$$^$9!#(J<br>
+韓国語コードにはありがたいことにひらがな・かたかなが入っています。漢字も入っていますが正字体です。そこで日本語で普通に入力をした後にこのフィルタを使います。<br>
 <br>
 1. Outlook Express
-$BMQ$K4Z9q8l%U%)%s%H$r%$%s%9%H!<%k$9$k!J4Z9q8lMQ%0%m!<%P%k(JIME$B$OITMW!K!#(J<br>
-2. $B4Z9q8l%3!<%I$O(J8$B%S%C%H;H$&$N$GK\J8$r%(%s%3!<%I$7$FAw?.$9$kI,MW$,$"$j$^$9!#(JOutlook
-Express 5 $B$N>l9g(J $B%D!<%k(J-&gt;$B%*%W%7%g%s(J-&gt;$BAw?.(J-&gt;$B%a!<%kAw?.$N7A<0(J
-$B$N=j$G@_Dj$7$^$9!#@_Dj$O%a%C%;!<%8$N?75,:n@.$NA0$K9T$o$J$$$H?75,%a%C%;!<%8$K$OH?1G$5$l$J$$$N$GCm0U!#(J<br>
+用に韓国語フォントをインストールする（韓国語用グローバルIMEは不要）。<br>
+2. 韓国語コードは8ビット使うので本文をエンコードして送信する必要があります。Outlook
+Express 5 の場合 ツール-&gt;オプション-&gt;送信-&gt;メール送信の形式
+の所で設定します。設定はメッセージの新規作成の前に行わないと新規メッセージには反映されないので注意。<br>
 3.
-$B%a%C%;!<%8$N?75,:n@.$r$7J8;z%3!<%I$r4Z9q8l$K$9$k!#(J<br>
+メッセージの新規作成をし文字コードを韓国語にする。<br>
 3. Seizi.exe
-$B$r;H$C$FJLESMQ0U$7$?F|K\8l%F%-%9%H$r%/%j%C%W%\!<%I7PM3$G%a%C%;!<%8$KE=$jIU$1$k!JBjL>$K$OF|K\8lIT2D!K!#(J<br>
+を使って別途用意した日本語テキストをクリップボード経由でメッセージに貼り付ける（題名には日本語不可）。<br>
 4.
-$B$&$^$/$$$+$J$$J8;z$O;M3Q$K$J$k$N$GJL$NJ8;z!&$3$H$P$K<j$G=$@5$9$k!#$?$H$($P(J
-&quot;$BFb(J&quot;$B$,BLL\!#$-$C$H4Z9q8l%3!<%I$G$O(J&quot;$B?M(J&quot;$B$G$O$J$/$F(J&quot;$BF~(J&quot;$B$J$N$G$7$g$&!J(JJIS$B$K$O$J$$$,$3$l$,@5;z!K!#(J<br>
+うまくいかない文字は四角になるので別の文字・ことばに手で修正する。たとえば
+&quot;内&quot;が駄目。きっと韓国語コードでは&quot;人&quot;ではなくて&quot;入&quot;なのでしょう（JISにはないがこれが正字）。<br>
 <br>
 <br>
-$BJQ49I=(J &quot;Seiji.dat&quot;
-$B$O%F%-%9%H%U%!%$%k$G!"3F9T$O(JUnicode$B!"4A;z!"@5;z$,%9%Z!<%96h@Z$j$GF~$C$F$$$^$9!#(J<br>
+変換表 &quot;Seiji.dat&quot;
+はテキストファイルで、各行はUnicode、漢字、正字がスペース区切りで入っています。<br>
 <br>
-$B;2>H<-E5!'(J $B!V(J $B?7;z8;!W!J3Q@n=qE9!K(J<br>
+参照辞典： 「 新字源」（角川書店）<br>
 <br>
-Delphi 4 $B%=!<%9$rE:IU!#(J<br>
+Delphi 4 ソースを添付。<br>
 <br>
 </p>
 
-<p><a href="bin/Seizi.lzh">$B%@%&%s%m!<%I(J (55KB)</a><br>
+<p><a href="bin/Seizi.lzh">ダウンロード (55KB)</a><br>
 </p>
 
 <hr>
 
-<p><a href="index.htm">$B%[!<%`(J</a></p>
+<p><a href="index.htm">ホーム</a></p>
 </body>
 </html>
