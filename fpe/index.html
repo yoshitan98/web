@@ -8,7 +8,7 @@
 
 <body bgcolor="#FFFFFF">
 
-<p><font size="5"><strong>FrontPage Express 2.0</strong></font>　　2025/8/28更新</p>
+<p><font size="5"><strong>FrontPage Express 2.0</strong></font>　　2025/8/29更新</p>
 
 <p>　</p>
 
@@ -18,7 +18,7 @@
 <br>
 サポート切れのソフトを使うと脆弱性がなんたらかんたらと言い出す方がいるが、そんな古いソフトを狙う人はおらず、世間で対策が普及している中でセキュリティー問題が起こるとは思えず、気にしてしない。<br>
 <br>
-文字コードはUTF8が使えないのでjisを使っているが、文字列の漢字INコードと漢字OUTコードがモダンブラウザーで文字化けすることがある。ヘッダー中の
+文字コードはutf-8が使えないのでjisを使っているが、文字列の漢字INコードと漢字OUTコードがモダンブラウザーで文字化けすることがある。ヘッダー中の
 &quot;Content-Type&quot; を &quot;content-type&quot; と手で書き換えるとなぜか直ったりする。<br>
 <br>
 <a href="https://www.eonet.ne.jp/~ninufuabushi/pc/urawaza.htm" target="_blank">Windows 2000 にFrontPage Express
@@ -45,7 +45,10 @@ target="_blank">https://web.archive.org/web/20040610031539/http://muryohp.s18.xr
 とか。これを使用するのは違法には違いないけれど今更違法性は低いだろう。ちなみにそのファイルは私が持っているファイルと完全に一致した。<br>
 <br>
 あるいは、古いPCに FrontPage Express 2.0
-がインストールされていれば、そのインストールフォルダをコピーして来てポータブルプログラムとして使えるのではないかな。</p>
+がインストールされていれば、そのインストールフォルダをコピーして来てポータブルプログラムとして使えるのではないかな。<br>
+<br>
+githubのようにutf-8しか受け付けないサーバーの場合はhtmlをnkfコマンド等でutf-8に変換してヘッダー内のcharsetを
+charset=utf-8 と書き換えればよろし。</p>
 
 <p>　</p>
 
